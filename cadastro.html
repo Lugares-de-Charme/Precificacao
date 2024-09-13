@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Quem é você e
+            qual o seu produto?
+        </h1>
+        <form onsubmit="storeCadastro(event)">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="product">Nome do Produto:</label>
+            <input type="text" id="product" name="product" required>
+
+            <label for="salary">Salário Desejado:</label>
+            <input type="number" id="salary" name="salary" step="0.01" required> <!-- Permite decimais -->
+
+            <label for="days">Dias Trabalhados Mensal:</label>
+            <input type="number" id="days" name="days" step="0.01" required> <!-- Permite decimais -->
+
+            <label for="daily-hours">Horas Diárias de Trabalho:</label>
+            <input type="number" id="daily-hours" name="daily-hours" step="0.01" required> <!-- Permite decimais -->
+
+            <button type="submit">Confirmar</button>
+        </form>
+        <a href="index.html">Voltar para a Tela de Início</a>
+    </div>
+</body>
+</html>

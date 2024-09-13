@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+            const firstName = localStorage.getItem('firstName');
+            if (firstName) {
+                document.getElementById('page-title').innerText = `Excelente ${firstName}, vamos cadastrar mais alguns dados sobre seu produto`;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 id="page-title">Leitura de Valores</h1>
+        <form onsubmit="storeValores(event)">
+            <label for="cost">Custo da Matéria Prima:</label>
+            <input type="number" id="cost" name="cost" step="0.01" required>
+
+            <label for="quantity">Quantidade de Peças:</label>
+            <input type="number" id="quantity" name="quantity" step="0.01" required>
+
+            <label for="hours">Horas para Fazer uma Peça:</label>
+            <input type="number" id="hours" name="hours" step="0.01" required>
+
+            <div class="button-group">
+                <button type="submit">Confirmar</button>
+                <button type="button" onclick="history.back()">Voltar</button>
+            </div>            
+        </form>
+    </div>
+</body>
+</html>

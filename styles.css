@@ -1,0 +1,87 @@
+/* Estilo existente */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 0.5rem; /* 8px */
+    padding: 1.25rem; /* 20px */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 0 2px 5px */
+    max-width: 75rem; /* 1200px */
+    text-align: center;
+}
+
+@media (max-width: 48rem) { /* 768px */
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 30rem) { /* 480px */
+    .item {
+        flex: 1 1 100%;
+    }
+}
+
+h1 {
+    font-size: 3rem; /* 48px */
+    margin-top: 0.625rem; /* 10px */
+    text-align: center; /* Centraliza o título horizontalmente */   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.3125rem; /* 5px */
+    text-align: left;
+}
+
+input {
+    margin-bottom: 0.9375rem; /* 15px */
+    padding: 0.5rem; /* 8px */
+    border: 0.0625rem solid #ddd; /* 1px */
+    border-radius: 0.25rem; /* 4px */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.25rem; /* 4px */
+    padding: 0.625rem; /* 10px */
+    cursor: pointer;
+    margin-top: 0.625rem; /* 10px */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para ajustar o espaçamento entre os botões */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem; /* 20px */
+}
+
+a {
+    display: block;
+    margin-top: 0.625rem; /* 10px */
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
